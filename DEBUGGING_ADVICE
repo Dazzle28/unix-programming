@@ -82,3 +82,10 @@ Notes on gdb
 
         gdb -q -tui -x $HOME/.gdbinit --args $exeFile $*
 
+9. When debugging programs that use the fork() system call, gdb can be made to debug parent and child by
+   adding the following command to .gdbinit:
+
+        set detach-on-fork off
+
+   If detach-on-fork is set to on, gdb will only debug the parent and the child will run independently.
+
