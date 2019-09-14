@@ -1,3 +1,3 @@
-CFLAGS := -Wno-parentheses
-export CFLAGS
+#CFLAGS := -Wno-parentheses
+#export CFLAGS
 include ../master.mk

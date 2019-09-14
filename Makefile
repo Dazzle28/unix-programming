@@ -10,11 +10,10 @@ subsystems:
 	cd Chapter08 && $(MAKE)
 	cd Chapter09 && $(MAKE)
 	cd Chapter10 && $(MAKE)
-	cd Chapter12 && $(MAKE)
-	cd Chapter14 && $(MAKE)
+	cd Chapter13 && $(MAKE)
 	cd Chapter15 && $(MAKE)
 	cd Chapter17 && $(MAKE)
-	cd Chapter18 && $(MAKE)
+	cd Chapter19 && $(MAKE)
 
 clean:
 	@cd Chapter01 && $(MAKE) clean
@@ -26,9 +25,8 @@ clean:
 	@cd Chapter08 && $(MAKE) clean
 	@cd Chapter09 && $(MAKE) clean
 	@cd Chapter10 && $(MAKE) clean
-	@cd Chapter12 && $(MAKE) clean
-	@cd Chapter14 && $(MAKE) clean
+	@cd Chapter13 && $(MAKE) clean
 	@cd Chapter15 && $(MAKE) clean
 	@cd Chapter17 && $(MAKE) clean
-	@cd Chapter18 && $(MAKE) clean
+	@cd Chapter19 && $(MAKE) clean
 	
