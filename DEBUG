@@ -1,0 +1,18 @@
+#! /bin/bash
+
+if [ $# -eq 0 ]
+then
+    echo "Please supply an executable file."
+    echo "Usage: DEBUG exe args" 
+    exit 1
+fi
+
+exeFile=$1
+shift
+if [ $# -ne 0 ]
+then
+    ARGS="-args $*"
+fi
+
+gdb -q -tui -x $HOME/.gdbinit --args $exeFile $*
+
